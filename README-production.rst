@@ -69,10 +69,6 @@ Also be sure to have mapped `django-coleman` in your DNS server, or in the
 
 PostgreSQL database
 -------------------
-
-If you want to use a PostgreSQL database (recommended), before run
-the `migration scripts <https://github.com/mrsarm/django-coleman/#install-and-run>`_
-be sure to create the user and the database used by Django Coleman.
 In the ``run.sh`` script is used this string connection
 as example: ``postgresql://dcoleman:postgres@localhost/dcoleman_dev``,
 so to create a database ``dcoleman_dev`` with a user ``dcoleman`` and a

@@ -166,16 +166,7 @@ class Task(models.Model):
                                self.number, e.__class__.__name__, str(e))
 
     def get_tasks_viewer_url(self):
-        """
-        Verification token added to the Tasks Viewer URL so each one
-        sent through email cannot be used to change the order number and
-        access to other orders.
-
-        It uses as input a salt code configured and the ID number.
-
-        See: coleman/settings_emails.py
-             https://github.com/mrsarm/tornado-dcoleman-mtasks-viewer
-        """
+    
         salt = settings.TASKS_VIEWER_HASH_SALT
         if not settings.DEBUG and salt == '1two3':
             logger.warning("Insecure salt code used to send email orders, do NOT use it in PRODUCTION")

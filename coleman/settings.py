@@ -181,9 +181,9 @@ REST_FRAMEWORK = {
 # Custom configurations
 #
 
-APP_NAME = env('APP_NAME', 'Django Coleman')
+APP_NAME = env('APP_NAME', 'Elewa Task Manager')
 APP_EMAIL = env('APP_EMAIL', 'no-reply@localhost')
-SITE_HEADER = env('SITE_HEADER', 'Django Coleman')
+SITE_HEADER = env('SITE_HEADER', 'Elewa Task Manager')
 INDEX_TITLE = env('INDEX_TITLE', 'Task Management')
 
 ADMINS = (
