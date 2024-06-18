@@ -68,34 +68,6 @@ with a uWSGI server::
 
     $ uwsgi uwsgi.ini
 
-
-Procfile and Honcho
-^^^^^^^^^^^^^^^^^^^
-
-The project also include a `<Procfile>`_, ready to use
-in platforms that support it like Heroku, or with
-command line tools like `Honcho <https://honcho.readthedocs.io>`_
-or Foreman.
-
-Honcho has the advantage of loading the environment variables
-from an .env file automatically (see section below). To install
-it execute ``pip3 install honcho``. Once installed, to run
-the app with Honcho::
-
-    $ honcho start web
-
-There are other shortcuts in the Procfile, like a command to
-create both the user and database (you have to provide the
-"master" password from the user "postgres" in an env variable)::
-
-    $  POSTGRES_PASSWORD=postgres honcho start createdb
-
-And here is the command to automatically creates an "admin" user
-with password "admin1234"::
-
-    $ honcho start createadmin
-
-
 Docker
 ------
 First, copy the ``.env.example`` file as ``.env`` files from the E2E repo,
