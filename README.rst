@@ -13,10 +13,7 @@ Features
 * Each task may have items: sub-tasks to be done.
 * The built-in Django *Authentication and Authorization* system
   to manage users and groups, login, etc.
-* Module `django-adminfilters <https://github.com/mrsarm/django-adminfilters>`_
-  that allows multiselection searches.
 * Send emails when a task is created.
-* Spanish translations.
 * Basic Rest API configuration (disabled by default, check the
   ``INSTALLED_APPS`` setting).
 * Optionally, you can use Django Coleman along with
