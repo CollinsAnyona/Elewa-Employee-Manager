@@ -16,17 +16,7 @@ Features
 * Send emails when a task is created.
 * Basic Rest API configuration (disabled by default, check the
   ``INSTALLED_APPS`` setting).
-* Optionally, you can use Django Coleman along with
-  `Django Coleman Viewer <https://github.com/mrsarm/tornado-dcoleman-mtasks-viewer>`_
-  to allows users to follow the orders.
 * Pytest with some tests as example and code coverage reports configured.
-* Docker and Docker Compose configurations (images published in
-  `Docker Hub <https://hub.docker.com/r/mrsarm/django-coleman>`_).
-* CI environment, and E2E tests written with Playwright:
-  `dcoleman-e2e <https://github.com/mrsarm/dcoleman-e2e>`_. CI is executed with
-  GitHub Actions, and executed on each push in this project,
-  the viewer repo, or the E2E repo itself. The task also releases the image
-  in the Docker Registry.
 * Ready to use "production" configurations as reference.
 
 .. image:: docs/source/_static/img/django-coleman.png
@@ -112,15 +102,6 @@ with password "admin1234"::
 
 Docker
 ------
-
-A reference `<Dockerfile>`_ is provided, and the image published
-in `Docker Hub <https://hub.docker.com/r/mrsarm/django-coleman>`_.
-
-Also ``compose.yaml`` and ``.env.example`` files are provided in the
-`dcoleman-e2e <https://github.com/mrsarm/dcoleman-e2e>`_ project, you
-can run all from there, Django Coleman, the viewer app and Postgres,
-and the E2E tests.
-
 First, copy the ``.env.example`` file as ``.env`` files from the E2E repo,
 and edit whatever value you want to::
 
@@ -245,30 +226,6 @@ settings to ``True`` to send the emails with the viewer order URL. See more conf
 
 .. image:: https://raw.githubusercontent.com/mrsarm/tornado-dcoleman-mtasks-viewer/master/docs/source/_static/img/dcoleman-viewer.png
 
-
-Development
------------
-
-Some tips if you are improving this application.
-
-Translations
-^^^^^^^^^^^^
-
-After add to the source code new texts to be translated, in the command
-line go to the module folder where the translations were edited, e.g.
-the "mtasks" folder, and execute the following replacing ``LANG``
-by a valid language code like ``es``::
-
-    $ django-admin makemessages -l LANG
-
-Then go to the *.po* file and add the translations. In the
-case of the "mtasks" module with ``es`` language, the file is
-located at ``mtasks/locale/es/LC_MESSAGES/django.po``. Finally
-execute the following to compile the locales::
-
-    $ django-admin compilemessages
-
-
 Oldest Django versions
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -279,28 +236,9 @@ the are a few more branches (though unmaintained):
 * ``django/2.2``
 * ``django/2.0``
 * ``django/1.11``
-
-Each has the source code that works for each version of Django,
-and maybe tweaking some configurations Django Coleman can works
-with other versions too.
-
-
-Some screenshots
-----------------
-
-.. image:: docs/source/_static/img/django-coleman-task-change.png
-   :alt: Django Coleman - Task Chance View
-
-
-.. image:: docs/source/_static/img/django-coleman-task-change-mobile.png
-   :alt: Django Coleman - Task Chance View, mobile version
-
-
 About
 -----
 
-**Project**: https://github.com/mrsarm/django-coleman
+**Project**: 
 
-**Authors**: (2017-2024) Mariano Ruiz <mrsarm@gmail.com>
-
-**License**: AGPL-v3
+**Authors**: Collins Otieno Junior
