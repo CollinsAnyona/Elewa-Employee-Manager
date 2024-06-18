@@ -180,20 +180,6 @@ Tests run with Pytest::
 Or use the Honcho task that also generates a report with
 the tests coverage: ``honcho start --no-prefix test``.
 
-
-Django Coleman Viewer
----------------------
-
-`Django Coleman Viewer <https://github.com/mrsarm/tornado-dcoleman-mtasks-viewer>`_ is a
-small webapp that can be used along with Django Coleman to allow "partners" (customers, employees,
-providers...) to see their orders anonymously, without access to the Django Admin.
-
-You need to enable the email notifications and set ``TASKS_VIEWER_ENABLED`` and ``REST_ENABLED``
-settings to ``True`` to send the emails with the viewer order URL. See more configurations in the
-``coleman/settings_emails.py`` file, and checkout the viewer project.
-
-.. image:: https://raw.githubusercontent.com/mrsarm/tornado-dcoleman-mtasks-viewer/master/docs/source/_static/img/dcoleman-viewer.png
-
 Oldest Django versions
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -207,6 +193,6 @@ the are a few more branches (though unmaintained):
 About
 -----
 
-**Project**: 
+**Project**: https://github.com/CollinsAnyona/Elewa-Employee-Manager
 
 **Authors**: Collins Otieno Junior
