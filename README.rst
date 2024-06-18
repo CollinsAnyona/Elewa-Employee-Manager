@@ -19,10 +19,6 @@ Features
 * Pytest with some tests as example and code coverage reports configured.
 * Ready to use "production" configurations as reference.
 
-.. image:: docs/source/_static/img/django-coleman.png
-   :alt: Django Coleman
-
-
 Requirements
 ------------
 
