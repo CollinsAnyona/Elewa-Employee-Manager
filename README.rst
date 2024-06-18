@@ -1,6 +1,3 @@
-.. image:: https://media.giphy.com/media/vQ2YjH4KCDRSM/giphy-downsized.gif
-
-
 Elewa Employee Manager 
 ==============
 
